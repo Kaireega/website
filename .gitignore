@@ -23,3 +23,9 @@ Thumbs.db
 .idea/
 *.iml
 /assets
+
+git lfs track "<large_file>"
+git add .gitattributes
+git add <large_file>
+git commit -m "Track large files"
+git push
