@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline-container {
+  position: relative;
+  margin: 20px auto;
+  width: 80%;
+  display: flex; /* Add flexbox */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  box-shadow: 0 6px 30px #a6a7ae84;
+  background-color: #49494a53;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.timeline-container:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Vertical Line */
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%; /* Extend the height to match the timeline */
+  width: 4px;
+  background: linear-gradient(to bottom, #414345, #6c757d);
+  z-index: 1; /* Ensure it appears behind the content */
+}
+
+/* Timeline Items */
+.timeline-item {
+  position: relative;
+  margin: 20px 0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  z-index: 2; /* Ensure items appear above the line */
+}
+
+.timeline-item.left {
+  align-self: flex-end; /* Align left items to the right */
+  text-align: left;
+}
+
+.timeline-item.right {
+  align-self: flex-start; /* Align right items to the left */
+  text-align: right;
+}
+
+.timeline-content {
+  position: relative;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #d3e2a15c;
+  width: 80%; /* Adjust width for consistency */
+}
+
+.timeline-item.left .timeline-content {
+  margin-right: 20px;
+}
+
+.timeline-item.right .timeline-content {
+  margin-left: 20px;
+}
+
+.timeline-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.timeline-description {
+  margin: 10px 0 0;
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: 100;
+  
+}
+
+.timeline-year {
+  font-size: 0.9rem;
+  color: #0b417aba;
+  font-weight: bold;
+  margin-top: 5px;
+  display: block;
+}
+.resume{
+  font-size: 7rem;
+  font-weight: bold;
+  margin-top: 5px;
+  display: block;
+  color: #4770c8;
+
+}

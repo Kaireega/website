@@ -1,0 +1,31 @@
+#Open_Message {
+   display: flex;
+   flex-direction: column; /* Stack items vertically */
+   align-items: center; /* Center items horizontally */
+   margin-top: 10vh;
+   margin-bottom: 20vh;  
+   width: 100vw; /* Full width of the viewport */
+   height: 45vh; /* Occupy 80% of the height of the viewport, adjust as needed */
+   letter-spacing: 2.2px;
+position: relative;
+color: #4770c8;
+   
+}
+
+#headline_title {
+   font-size: 7rem; /* Keep the current font size */
+   margin-top: 0; /* Remove any top margin */
+   text-align: center; /* Center the text */
+   font-family: 'Fortusnovabold', sans-serif;
+   
+}
+
+
+
+#open_message_body {
+   font-size: 3rem;
+   width: 80%; /* Control the width of the body */
+   text-align: center;
+   
+
+}

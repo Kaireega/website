@@ -1,0 +1,21 @@
+.star {
+    position: absolute;
+    background-color: rgb(255, 238, 207);
+    border-radius: 50%;
+    box-shadow: 0 0 5px white; /* Glow effect */
+    animation: moveStar linear infinite;
+  }
+  
+  @keyframes moveStar {
+    60% {
+      transform: translateX(0) translateY(0);
+    }
+    100% {
+      transform: translateX(-200vw) translateY(-100vh);
+      opacity: 0; /* Gradually fade out */
+    }
+  }
+ 
+    
+  /* Optional: Background Color for Debugging */
+ 

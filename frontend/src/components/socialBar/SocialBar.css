@@ -1,0 +1,30 @@
+#SocialBar {
+  position: sticky;
+  top: 5%;
+  left: 0;
+  width: 80px;
+  background-color: rgba(18, 29, 42, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+#SocialBar a {
+  margin: 15px 0;
+  text-decoration: none;
+}
+
+#SocialBar img, #SocialBar svg {
+  width: 40px;
+  height: auto;
+  cursor: pointer;
+}
+
+#SocialBar a:hover img, #SocialBar a:hover svg {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}

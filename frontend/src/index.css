@@ -1,0 +1,12 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+@font-face {
+  font-family: 'Fortusnovabold';
+  src: url('./assets/fonts/CfFortusnovaDemoBold-7OBBE.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
