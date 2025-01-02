@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Sphere, Torus } from "@react-three/drei";
 import * as THREE from "three";
@@ -34,15 +34,32 @@ const Planet = ({ size, color, position, ring, texture }) => {
 };
 
 const PlanetsBackground = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  
   const planets = [
     { size: 3.5, color: "#8a2be2", position: [20, -10, -7], ring: true, texture: roughness
     },
-    { size: 13.5, color: "#8807e4", position: [-23, 3, -19], ring: false, texture: AmbientOcclusion
+    { size: 13.5, color: "#8807e4", position: [-41, 13, -19], ring: false, texture: AmbientOcclusion
     },
     { size: 6.2, color: "#a00241", position: [19, 8, -5], ring: true, texture: normalGL
     },
-   
-
+    { size: 3.5, color: "#8a2be2", position: [-29, -17, -5], ring: true, texture: roughness
+    },
+    { size: 4.2, color: "#a04241", position: [-19, -8, 5], ring: true, texture: normalGL
+    },
+    
   ];
 
   return (
@@ -51,8 +68,7 @@ const PlanetsBackground = () => {
         position: "fixed",
         top: 0,
         left: 0,
-        width: "100%",
-        height: "100%",
+       
         
       }}
       camera={{ position: [0, 0, 10], fov: 75 }}

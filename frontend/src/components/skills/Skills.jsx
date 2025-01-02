@@ -12,10 +12,9 @@ const skillsData = [
   { name: "Java", icon: JavaLogo, relative: true },
   { name: "Python", icon: PythonLogo, relative: true },
   { name: "SQL", icon: SQLLogo, relative: false },
-  { name: "Jupyter Notebooks", icon: JupyterLogo, relative: true },
+  { name: "Jupyter Notebooks", icon: JupyterLogo, relative: false },
   { name: "Spring Boot", icon: SpringBootLogo, relative: true },
   { name: "Pandas", icon: PandasLogo, relative: true },
-  { name: "MacOS", icon: MacOSLogo, relative: false },
 ];
 function Skills  ()  {
   return (
