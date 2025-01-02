@@ -1,56 +1,32 @@
 import React from 'react';
 import ProjectItem from './ProjectItem';
 import './ProjectsDisplay.css';
+import Rewire from '../../assets//projectImages/Rewire.png';
 
 const portfolioData = [
   {
     id: 1,
-    title: 'Flight Local (B2B Travel Solution)',
-    imageUrl: 'https://tamalsen.dev/wp-content/uploads/2021/11/flighlocal-cover-image.jpg',
-    category: 'Web Development',
-    projectLink: '#',
-    categoryLink: '#',
+    title: 'Revive (Cognitive Behavioral Therapy Application)',
+    imageUrl: Rewire,
+    description:'',
+
+    
   },
   {
     id: 2,
     title: 'Another Project',
     imageUrl: 'https://via.placeholder.com/300',
-    category: 'App Development',
-    projectLink: '#',
-    categoryLink: '#',
+    description:'',
+
+   
   },
   {
     id: 3,
     title: 'Another Project',
     imageUrl: 'https://via.placeholder.com/300',
-    category: 'App Development',
-    projectLink: '#',
-    categoryLink: '#',
+    description:'',
   },
-  {
-    id: 4,
-    title: 'Another Project',
-    imageUrl: 'https://via.placeholder.com/300',
-    category: 'App Development',
-    projectLink: '#',
-    categoryLink: '#',
-  },
-  {
-    id: 5,
-    title: 'Another Project',
-    imageUrl: 'https://via.placeholder.com/300',
-    category: 'App Development',
-    projectLink: '#',
-    categoryLink: '#',
-  },
-  {
-    id: 6,
-    title: 'Another Project',
-    imageUrl: 'https://via.placeholder.com/300',
-    category: 'App Development',
-    projectLink: '#',
-    categoryLink: '#',
-  },
+  
   // Add more portfolio items as needed
 ];
 

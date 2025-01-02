@@ -1,7 +1,7 @@
 import React from 'react';
 import { ReactComponent as GitbLogo } from '../../assets/picsvg_download.svg';
 import LinkedinLogo from '../../assets/—Pngtree—white linkedin icon png_3562068.png'; 
-import { ReactComponent as InstagramLogo } from '../../assets/instagram.svg'; 
+import { ReactComponent as Twitter } from '../../assets/twitter.svg'; 
 
 import "./SocialBar.css";
 
@@ -14,8 +14,8 @@ function SocialBar() {
         <a id="Linkedin_Logo" href="https://www.linkedin.com/in/kairee-gay-8520251b0">
           <img src={LinkedinLogo} alt="LinkedIn Logo" id="LinkedinLogo" /> 
         </a>
-        <a id="InstagramLogo" href="https://github.com/Kaireega">
-          <InstagramLogo id="InstagramLogo" /> 
+        <a id="InstagramLogo" href="https://x.com/pippip_hooray">
+          <Twitter id="InstagramLogo" /> 
         </a>
     
     </div>

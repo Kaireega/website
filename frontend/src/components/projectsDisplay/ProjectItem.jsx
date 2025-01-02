@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProjectsDisplay.css';
 
-const ProjectItem = ({ title, imageUrl, category, projectLink, categoryLink }) => {
+const ProjectItem = ({ title, imageUrl,description , projectLink }) => {
   return (
     <div className="portfolio-item-wrap">
       <div className="portfolio-item">
@@ -12,14 +12,10 @@ const ProjectItem = ({ title, imageUrl, category, projectLink, categoryLink }) =
         </div>
         <div className="portfolio-item-details">
           <h3 className="portfolio-item-headline">{title}</h3>
-          <div className="category-holder">
-            <span className="category">
-              <a href={categoryLink}>{category}</a>
-            </span>
-          </div>
-          <div className="show-project">
+          <p className="portfolio-item-description">{description}</p>
+          {/* <div className="show-project">
             <a href={projectLink}>Show Project</a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
