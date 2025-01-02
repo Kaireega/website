@@ -8,7 +8,7 @@
    height: 45vh; /* Occupy 80% of the height of the viewport, adjust as needed */
    letter-spacing: 2.2px;
 position: relative;
-color: #4770c8;
+color: #79baf3;
    
 }
 
@@ -24,7 +24,7 @@ color: #4770c8;
 
 #open_message_body {
    font-size: 3rem;
-   width: 80%; /* Control the width of the body */
+   width: 85%; /* Control the width of the body */
    text-align: center;
    
 

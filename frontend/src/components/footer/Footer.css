@@ -1,10 +1,31 @@
-
 #footer {
-    
-    text-align: center;
-    height: 40px;
-    width: 100%;
-}
-    
-
+    color: #8babf0; /* White text */
+    text-align: center; /* Center text */
+    padding: 20px; /* Spacing */
+    position: relative; /* Positioning for sticky footer */
+    bottom: 0; /* Sticks to the bottom */
+    width: 100%; /* Full width */
+    font-size: 1.2rem; /* Larger text */
+  }
+  
+  .footer-content {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+  }
+  
+  .social-links {
+    margin-top: 10px; /* Space above links */
+  }
+  
+  .social-links a {
+    color: #8babf0; /* Link color */
+    margin: 0 10px; /* Spacing between links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .social-links a:hover {
+    color: #61dafb; /* Change color on hover */
+  }
   

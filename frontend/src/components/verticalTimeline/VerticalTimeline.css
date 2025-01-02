@@ -5,14 +5,12 @@ body {
 }
 
 .timeline-container {
-  position: relative;
   margin: 20px auto;
-  width: 66%;
+  width: 60%;
   display: flex; /* Add flexbox */
   flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center items horizontally */
-  box-shadow: 0 6px 30px #a6a7ae84;
-  background: rgba(0, 0, 0, 0.412);
+  box-shadow: 0 6px 30px #00000084;
   border-radius: 30px;
   padding: 20px;
 }

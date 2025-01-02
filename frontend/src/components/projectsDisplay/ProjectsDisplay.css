@@ -49,21 +49,21 @@
   
   .portfolio-item-headline {
     font-size: 1.25rem;
-    color: #333;
+    color:#333;
     margin-bottom: 5px;
   }
   
-  .category-holder {
-    font-size: 0.875rem;
+  .project-title {
+    font-size: 2rem;
     color: #666;
   }
   
-  .category-holder a {
+  .project-title a {
     color: #007bff;
     text-decoration: none;
   }
   
-  .category-holder a:hover {
+  .project-title a:hover {
     text-decoration: underline;
   }
   
@@ -94,4 +94,82 @@
       width: 100%; /* Single column layout */
     }
   }
-  
+  .portfolio-title{
+    
+      font-size: 7rem;
+      font-weight: bold;
+      margin-top: 5px;
+      display: flex;
+      color: #79baf3;
+      
+    
+    }
+  .portfolio-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 250px;
+  }
+  .portfolio-item-description{
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #2366a0;
+  }
+ 
+  .project-item-wrapper {
+    display: contents; /* Ensures no extra box is added to the grid */
+    cursor: pointer;   /* Makes the item clickable */
+  }
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #615cff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.project-item-wrapper {
+  display: contents; /* Ensures no extra box is added to the grid */
+  cursor: pointer;   /* Makes the item clickable */
+}
+a:visited {
+  font-weight: bold;
+  color: #a00241;
+  text-decoration: none;
+}

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React,{ useEffect, useRef, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Sphere, Torus } from "@react-three/drei";
 import * as THREE from "three";
@@ -47,18 +47,18 @@ const PlanetsBackground = () => {
     };
   }, []);
 
+
+
+
   
   const planets = [
     { size: 3.5, color: "#8a2be2", position: [20, -10, -7], ring: true, texture: roughness
     },
-    { size: 13.5, color: "#8807e4", position: [-41, 13, -19], ring: false, texture: AmbientOcclusion
+    { size: 13.5, color: "#ec17ff", position: [-41, 13, -19], ring: false, texture: AmbientOcclusion
     },
-    { size: 6.2, color: "#a00241", position: [19, 8, -5], ring: true, texture: normalGL
+    { size: 6.2, color: "#de0b5f", position: [19, 8, -5], ring: true, texture: normalGL
     },
-    { size: 3.5, color: "#8a2be2", position: [-29, -17, -5], ring: true, texture: roughness
-    },
-    { size: 4.2, color: "#a04241", position: [-19, -8, 5], ring: true, texture: normalGL
-    },
+ 
     
   ];
 
@@ -80,7 +80,11 @@ const PlanetsBackground = () => {
           key={index}
           size={planet.size}
           color={planet.color}
-          position={planet.position}
+          position={[
+            planet.position[0] + scrollY * 0.001, // Fine-tuned ratio
+            planet.position[1]  + scrollY * 0.001, // Fine-tuned ratio
+            planet.position[2],
+          ]}
           ring={planet.ring}
           texture={planet.texture}
         />
