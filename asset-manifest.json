@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/repository/static/css/main.af06e936.css",
+    "main.js": "/repository/static/js/main.b21af641.js",
+    "static/media/Ground080_1K-JPG_NormalGL.jpg": "/repository/static/media/Ground080_1K-JPG_NormalGL.0a850445201afaf18662.jpg",
+    "static/media/jobs.png": "/repository/static/media/jobs.6ce5344ae863d63f0fce.png",
+    "static/media/Rewire.png": "/repository/static/media/Rewire.fd11475f9eca44ea2ea6.png",
+    "static/media/forexdash.png": "/repository/static/media/forexdash.c26b5c53cff8d35eea41.png",
+    "static/media/Ground080_1K-JPG_AmbientOcclusion.jpg": "/repository/static/media/Ground080_1K-JPG_AmbientOcclusion.b5b83d4bc093c40ba1a8.jpg",
+    "static/media/Ground080_1K-JPG_Roughness.jpg": "/repository/static/media/Ground080_1K-JPG_Roughness.5457f3c9f4a28ebedb01.jpg",
+    "static/media/CfFortusnovaDemoBold-7OBBE.otf": "/repository/static/media/CfFortusnovaDemoBold-7OBBE.bfc932975213c866c295.otf",
+    "static/media/—Pngtree—white linkedin icon png_3562068.png": "/repository/static/media/—Pngtree—white linkedin icon png_3562068.ed083572f9c8ee5f5098.png",
+    "static/media/Windows_Logo.svg": "/repository/static/media/Windows_Logo.d14616ebfda1aa6231194acd5cc98cc9.svg",
+    "static/media/twitter.svg": "/repository/static/media/twitter.7bdb6cfcd6a70a35a932b8a38ee2ff03.svg",
+    "static/media/java-svgrepo-com.svg": "/repository/static/media/java-svgrepo-com.68585ce8dadbd8ecebdc99a764c5c1cf.svg",
+    "static/media/picsvg_download.svg": "/repository/static/media/picsvg_download.d8885c5b3f8c6a22982e4272a68b9b28.svg",
+    "static/media/python-svgrepo-com.svg": "/repository/static/media/python-svgrepo-com.584d8e8274929c83b3afe4d258e31753.svg",
+    "static/media/apple-svgrepo-com.svg": "/repository/static/media/apple-svgrepo-com.708ba448c841291089f412662acc1de6.svg",
+    "static/media/sql-svgrepo-com.svg": "/repository/static/media/sql-svgrepo-com.9c81c444e214ac59f3b82775061eb41c.svg",
+    "static/media/logo-jupyter-svgrepo-com.svg": "/repository/static/media/logo-jupyter-svgrepo-com.b5b3776102205f655d7d40807b56eaf5.svg",
+    "index.html": "/repository/index.html",
+    "static/media/Spring_Boot.svg": "/repository/static/media/Spring_Boot.06648761f888d95c060a68377ffd04e8.svg",
+    "static/media/pandas-svgrepo-com.svg": "/repository/static/media/pandas-svgrepo-com.9bd98d45528b4db66a14dea560328cba.svg",
+    "static/media/React-icon.svg": "/repository/static/media/React-icon.928f956d9c8ebcffb98a8e917154a81a.svg",
+    "static/media/Microsoft_logo.svg": "/repository/static/media/Microsoft_logo.72f0fcc793eda19cdc1604efc3b381cb.svg",
+    "main.af06e936.css.map": "/repository/static/css/main.af06e936.css.map",
+    "main.b21af641.js.map": "/repository/static/js/main.b21af641.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af06e936.css",
+    "static/js/main.b21af641.js"
+  ]
+}

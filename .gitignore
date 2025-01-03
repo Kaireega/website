@@ -1,0 +1,31 @@
+
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+.env
+.gradle
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Build files
+dist/
+build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+*.iml
+/assets
+
+git lfs track "<large_file>"
+git add .gitattributes
+git add <large_file>
+git commit -m "Track large files"
+git push
