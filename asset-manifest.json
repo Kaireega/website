@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.9e976df2.css",
+    "main.css": "/website/static/css/main.1076aa74.css",
     "main.js": "/website/static/js/main.b9288386.js",
     "static/media/Ground080_1K-JPG_NormalGL.jpg": "/website/static/media/Ground080_1K-JPG_NormalGL.0a850445201afaf18662.jpg",
     "static/media/jobs.png": "/website/static/media/jobs.6ce5344ae863d63f0fce.png",
@@ -23,11 +23,11 @@
     "static/media/pandas-svgrepo-com.svg": "/website/static/media/pandas-svgrepo-com.9bd98d45528b4db66a14dea560328cba.svg",
     "static/media/React-icon.svg": "/website/static/media/React-icon.928f956d9c8ebcffb98a8e917154a81a.svg",
     "static/media/Microsoft_logo.svg": "/website/static/media/Microsoft_logo.72f0fcc793eda19cdc1604efc3b381cb.svg",
-    "main.9e976df2.css.map": "/website/static/css/main.9e976df2.css.map",
+    "main.1076aa74.css.map": "/website/static/css/main.1076aa74.css.map",
     "main.b9288386.js.map": "/website/static/js/main.b9288386.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e976df2.css",
+    "static/css/main.1076aa74.css",
     "static/js/main.b9288386.js"
   ]
 }
