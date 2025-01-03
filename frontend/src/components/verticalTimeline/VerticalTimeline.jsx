@@ -38,8 +38,8 @@ const VerticalTimeline = () => {
         <div key={index} className={`timeline-item ${index % 2 === 0 ? "left" : "right"}`}>
           <div className="timeline-content">
             <h3 className="timeline-title">{event.title}</h3>
-            <span className="timeline-year">{event.year}</span>
             <span className="company-name">{event.company}</span>
+            <span className="timeline-year">{event.year}</span>
             <p className="timeline-description">{event.description}</p>
 
           </div>

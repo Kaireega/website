@@ -1,4 +1,4 @@
-import React,{ useEffect, useRef, useState } from "react";
+import React from "react";
 import { Canvas } from "@react-three/fiber";
 import { Sphere, Torus } from "@react-three/drei";
 import * as THREE from "three";
@@ -34,23 +34,7 @@ const Planet = ({ size, color, position, ring, texture }) => {
 };
 
 const PlanetsBackground = () => {
-  const [scrollY, setScrollY] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-
-
-
-  
   const planets = [
     { size: 3.5, color: "#8a2be2", position: [20, -10, -7], ring: true, texture: roughness
     },
@@ -80,11 +64,7 @@ const PlanetsBackground = () => {
           key={index}
           size={planet.size}
           color={planet.color}
-          position={[
-            planet.position[0] + scrollY * 0.001, // Fine-tuned ratio
-            planet.position[1]  + scrollY * 0.01, // Fine-tuned ratio
-            planet.position[2],
-          ]}
+          position={planet.position}
           ring={planet.ring}
           texture={planet.texture}
         />

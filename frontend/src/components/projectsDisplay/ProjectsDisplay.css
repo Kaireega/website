@@ -8,7 +8,7 @@
   }
   /* Portfolio Item Wrap */
 .portfolio-item-wrap {
-    position: relative;
+    
     width: calc(27.333% - 40px); /* 3 columns layout */
     padding: 20px;
     background: rgba(0, 0, 0, 0.412);
@@ -36,6 +36,7 @@
     height: auto;
     border-radius: 4px;
     transition: transform 0.3s;
+    
   }
   
   .portfolio-item-image:hover img {
@@ -44,16 +45,19 @@
   
   /* Details */
   .portfolio-item-details {
+    position: relative;
     margin-top: 10px;
   }
   
   .portfolio-item-headline {
+    position: relative;
     font-size: 1.25rem;
     color:#333;
     margin-bottom: 5px;
   }
   
   .project-title {
+    position: relative;
     font-size: 2rem;
     color: #666;
   }
@@ -115,6 +119,7 @@
     font-size: 1.5rem;
     font-weight: 100;
     color: #2366a0;
+    position: relative;
   }
  
   .project-item-wrapper {
@@ -170,6 +175,6 @@
 }
 a:visited {
   font-weight: bold;
-  color: #a00241;
+  color: #c9698f;
   text-decoration: none;
 }

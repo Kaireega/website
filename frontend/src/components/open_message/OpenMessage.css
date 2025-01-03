@@ -5,12 +5,11 @@
    margin-top: 10vh;
    margin-bottom: 20vh;  
    width: 100vw; /* Full width of the viewport */
-   height: 45vh; /* Occupy 45% of the height of the viewport */
+   height: 45vh; /* Occupy 80% of the height of the viewport, adjust as needed */
    letter-spacing: 2.2px;
-   position: relative;
-   color: #79baf3;
-   padding: 0 2rem; /* Add horizontal padding for better spacing */
-   box-sizing: border-box; /* Include padding in the element's total width/height */
+position: relative;
+color: #79baf3;
+   
 }
 
 #headline_title {
@@ -18,28 +17,15 @@
    margin-top: 0; /* Remove any top margin */
    text-align: center; /* Center the text */
    font-family: 'Fortusnovabold', sans-serif;
-
-   /* Responsive font size */
-   @media (max-width: 768px) {
-      font-size: 5rem; /* Decrease font size on smaller screens */
-   }
-
-   @media (max-width: 480px) {
-      font-size: 4rem; /* Further decrease for mobile devices */
-   }
+   
 }
 
+
+
 #open_message_body {
-   font-size: 3rem; /* Keep the current font size */
+   font-size: 3rem;
    width: 85%; /* Control the width of the body */
    text-align: center;
+   
 
-   /* Responsive font size */
-   @media (max-width: 768px) {
-      font-size: 2.5rem; /* Decrease font size on smaller screens */
-   }
-
-   @media (max-width: 480px) {
-      font-size: 2rem; /* Further decrease for mobile devices */
-   }
 }

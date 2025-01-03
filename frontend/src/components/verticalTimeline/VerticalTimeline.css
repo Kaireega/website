@@ -6,17 +6,19 @@ body {
 
 .timeline-container {
   margin: 20px auto;
-  width: 90%; /* Increased width for mobile */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 80%;
+  display: flex; /* Add flexbox */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
   box-shadow: 0 6px 30px #00000084;
   border-radius: 30px;
   padding: 20px;
+  background: rgba(0, 0, 0, 0.412);
+
 }
 
 .timeline-container:hover {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
 
 /* Vertical Line */
@@ -24,29 +26,29 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  height: 100%;
+  height: 100%; /* Extend the height to match the timeline */
   width: 4px;
   background: linear-gradient(to bottom, #414345, #6c757d);
-  z-index: 1;
+  z-index: 1; /* Ensure it appears behind the content */
 }
 
 /* Timeline Items */
 .timeline-item {
   position: relative;
   margin: 20px 0;
-  width: 90%; /* Adjusted width for mobile */
+  width: 50%;
   display: flex;
   flex-direction: column;
-  z-index: 2;
+  z-index: 2; /* Ensure items appear above the line */
 }
 
 .timeline-item.left {
-  align-self: flex-end;
+  align-self: flex-end; /* Align left items to the right */
   text-align: left;
 }
 
 .timeline-item.right {
-  align-self: flex-start;
+  align-self: flex-start; /* Align right items to the left */
   text-align: right;
 }
 
@@ -55,62 +57,48 @@ body {
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #d3e2a15c;
-  width: 100%; /* Full width on mobile for better readability */
+  width: 80%; /* Adjust width for consistency */
 }
 
 .timeline-item.left .timeline-content {
-  margin-right: 0; /* Remove margin for mobile */
+  margin-right: 20px;
 }
 
 .timeline-item.right .timeline-content {
-  margin-left: 0; /* Remove margin for mobile */
+  margin-left: 20px;
 }
 
 .timeline-title {
-  font-size: 1.2rem; /* Adjusted size for mobile */
+  font-size: 1.5rem;
   font-weight: bold;
-  color: #000000;
+  color: #2e8ee2;
 }
 
 .timeline-description {
   margin: 10px 0 0;
-  color: #000000;
-  font-size: 1rem; /* Adjusted size for mobile */
+  color: #2e8ee2;
+  font-size: 1.5rem;
   font-weight: 100;
+  
 }
 
 .timeline-year {
-  font-size: 0.8rem; /* Adjusted size for mobile */
-  color: #0b417aba;
+  font-size: 0.9rem;
+  color: #c86aedba;
   font-weight: bold;
   margin-top: 5px;
   display: block;
 }
-
-.resume {
-  font-size: 3rem; /* Adjusted size for mobile */
+.resume{
+  font-size: 7rem;
   font-weight: bold;
   margin-top: 5px;
   display: block;
-  color: #4770c8;
+  color: #79baf3;
+
 }
-
-/* Media Queries for Further Optimization */
-@media (max-width: 768px) {
-  .timeline-title {
-    font-size: 1.5rem; /* Increased title size for better visibility on mobile */
-  }
-
-  .timeline-description {
-    font-size: 1.2rem; /* Increased description size */
-  }
-
-  .timeline-year {
-    font-size: 1rem; /* Increased year size */
-  }
-
-  .resume {
-    font-size: 4rem; /* Increased resume size */
-  }
+.company-name{
+  color: #c86aedba;
+  font-size: 1rem;
+  
 }
