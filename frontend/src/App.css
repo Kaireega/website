@@ -1,5 +1,5 @@
-
-  html, body, div, span, applet, object, iframe,
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -9,7 +9,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
-figure, figcaption,m footer, header, hgroup,
+figure, figcaption, footer, header, hgroup,
 main, menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -19,6 +19,8 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
+
+/* Main App Styles */
 .App {
   margin: 0;
   position: relative;
@@ -26,30 +28,50 @@ time, mark, audio, video {
   font-style: normal;
   color: #0a0b0b;
   font-family: 'Fortusnovabold', sans-serif;
-  
+  padding: 1rem; /* Add some padding for better spacing */
 }
-.background {
-    background: linear-gradient(to bottom, #4514ccf9, #6c0fb8, #b005b6, #a403b0);
-  
-  /* background-image: linear-gradient(315deg, #7c0472 0%, #3c055c 74%);
- --sz: 21px;
-  --c1: #181818;
-  --c2: #7c0472;
-  --c3: #3c055c;
-  --c4: #0006;
-  --ts: 50%/ calc(var(--sz) * 5) calc(var(--sz) * 10);
-  margin: 0;
-  padding: 0;
- 
-  
-  background: 
-    linear-gradient(180deg, var(--c4) 0 14%, #fff0 0 100%) var(--ts),
-    conic-gradient(from 0deg at 0% 14%, var(--c1) 0 20deg, #fff0 0 100%) var(--ts),
-    conic-gradient(from 20deg at 74% 50%, var(--c3) 0 70deg, #fff0 0 100%) var(--ts),
-    conic-gradient(from 90deg at 50% 50%, var(--c1) 0 70deg, #fff0 0 100%) var(--ts),
-    conic-gradient(from 90deg at 0% 50%, var(--c2) 0 70deg, var(--c1) 0 90deg, #fff0 0 100%) var(--ts),
-    linear-gradient(110deg, var(--c3) 0 33%, var(--c1) 0 66%, var(--c2) 0 90%, black 0 100%) var(--ts);  */
 
+/* Background Styles */
+.background {
+  background: linear-gradient(to bottom, #4514ccf9, #6c0fb8, #b005b6, #a403b0);
+}
+
+/* Responsive Typography */
+h1, h2, h3, p {
+  margin: 1rem 0; /* Add margins for better spacing */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .App {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    padding: 0.5rem; /* Reduce padding on mobile */
   }
-  
- 
+
+  h1 {
+    font-size: 2rem; /* Responsive heading size */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Responsive heading size */
+  }
+
+  h3 {
+    font-size: 1.25rem; /* Responsive heading size */
+  }
+}
+
+/* Add styles for buttons, links, and other interactive elements */
+button, a {
+  padding: 0.75rem 1.5rem; /* Increase padding for touch targets */
+  font-size: 1rem; /* Ensure text is readable */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor for better UX */
+}
+
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+

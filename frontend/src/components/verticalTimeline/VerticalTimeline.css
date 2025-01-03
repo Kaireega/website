@@ -6,17 +6,17 @@ body {
 
 .timeline-container {
   margin: 20px auto;
-  width: 60%;
-  display: flex; /* Add flexbox */
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
+  width: 90%; /* Increased width for mobile */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   box-shadow: 0 6px 30px #00000084;
   border-radius: 30px;
   padding: 20px;
 }
 
 .timeline-container:hover {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Vertical Line */
@@ -24,29 +24,29 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  height: 100%; /* Extend the height to match the timeline */
+  height: 100%;
   width: 4px;
   background: linear-gradient(to bottom, #414345, #6c757d);
-  z-index: 1; /* Ensure it appears behind the content */
+  z-index: 1;
 }
 
 /* Timeline Items */
 .timeline-item {
   position: relative;
   margin: 20px 0;
-  width: 50%;
+  width: 90%; /* Adjusted width for mobile */
   display: flex;
   flex-direction: column;
-  z-index: 2; /* Ensure items appear above the line */
+  z-index: 2;
 }
 
 .timeline-item.left {
-  align-self: flex-end; /* Align left items to the right */
+  align-self: flex-end;
   text-align: left;
 }
 
 .timeline-item.right {
-  align-self: flex-start; /* Align right items to the left */
+  align-self: flex-start;
   text-align: right;
 }
 
@@ -56,19 +56,19 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #d3e2a15c;
-  width: 80%; /* Adjust width for consistency */
+  width: 100%; /* Full width on mobile for better readability */
 }
 
 .timeline-item.left .timeline-content {
-  margin-right: 20px;
+  margin-right: 0; /* Remove margin for mobile */
 }
 
 .timeline-item.right .timeline-content {
-  margin-left: 20px;
+  margin-left: 0; /* Remove margin for mobile */
 }
 
 .timeline-title {
-  font-size: 1.5rem;
+  font-size: 1.2rem; /* Adjusted size for mobile */
   font-weight: bold;
   color: #000000;
 }
@@ -76,23 +76,41 @@ body {
 .timeline-description {
   margin: 10px 0 0;
   color: #000000;
-  font-size: 1.5rem;
+  font-size: 1rem; /* Adjusted size for mobile */
   font-weight: 100;
-  
 }
 
 .timeline-year {
-  font-size: 0.9rem;
+  font-size: 0.8rem; /* Adjusted size for mobile */
   color: #0b417aba;
   font-weight: bold;
   margin-top: 5px;
   display: block;
 }
-.resume{
-  font-size: 7rem;
+
+.resume {
+  font-size: 3rem; /* Adjusted size for mobile */
   font-weight: bold;
   margin-top: 5px;
   display: block;
   color: #4770c8;
+}
 
+/* Media Queries for Further Optimization */
+@media (max-width: 768px) {
+  .timeline-title {
+    font-size: 1.5rem; /* Increased title size for better visibility on mobile */
+  }
+
+  .timeline-description {
+    font-size: 1.2rem; /* Increased description size */
+  }
+
+  .timeline-year {
+    font-size: 1rem; /* Increased year size */
+  }
+
+  .resume {
+    font-size: 4rem; /* Increased resume size */
+  }
 }

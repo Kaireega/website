@@ -2,6 +2,7 @@
   "name": "jiraiya-sen",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Kaireega.github.io/website",
   "dependencies": {
     "@mui/icons-material": "^6.3.0",
     "@react-three/drei": "^9.120.4",
@@ -22,7 +23,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +46,7 @@
     ]
   },
   "devDependencies": {
-    "@svgr/webpack": "^8.1.0"
+    "@svgr/webpack": "^8.1.0",
+    "gh-pages": "^6.3.0"
   }
 }

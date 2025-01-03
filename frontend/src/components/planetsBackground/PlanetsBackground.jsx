@@ -82,7 +82,7 @@ const PlanetsBackground = () => {
           color={planet.color}
           position={[
             planet.position[0] + scrollY * 0.001, // Fine-tuned ratio
-            planet.position[1]  + scrollY * 0.001, // Fine-tuned ratio
+            planet.position[1]  + scrollY * 0.01, // Fine-tuned ratio
             planet.position[2],
           ]}
           ring={planet.ring}
