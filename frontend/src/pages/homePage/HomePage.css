@@ -1,0 +1,88 @@
+/* Base styles for the homepage */
+.HomePage {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+/* Background sections */
+.background-section {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  transition: all 0.6s ease;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.background-section.left {
+  left: 0;
+  background-size: cover;
+  background-position: top center; /* Adjust position to show key parts of the image */
+  filter: grayscale(10%);
+  transition: all 0.6s ease;
+  background-image: url('../../assets/car-wash-vs-detailing-1.jpg'); /* Replace with Business One image */
+}
+
+.background-section.right {
+  background-size: cover;
+  background-position: top center; /* Adjust position to show key parts of the image */
+  filter: grayscale(80%);
+  transition: all 0.6s ease;
+  right: 0;
+  background-image: url('../../assets/'); /* Replace with Business Two image */
+}
+
+/* Expand on hover */
+.background-section.hovered {
+  width: 100%;
+  filter: grayscale(0%);
+  z-index: 1;
+}
+
+/* Content section */
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+p {
+  margin-bottom: 40px;
+  font-size: 1.2rem;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;
+  color: #fff;
+}

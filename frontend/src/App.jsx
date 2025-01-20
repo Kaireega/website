@@ -1,28 +1,18 @@
 import React from "react";
-import "./App.css";
-import SocialBar from "./components/socialBar/SocialBar";
-import Footer from "./components/footer/Footer";
-import OpenMessage from "./components/open_message/OpenMessage";
-import VerticalTimeline from "./components/verticalTimeline/VerticalTimeline";
-import StarryBackground from "./components/starryBackground/StarryBackground";
-import PlanetsBackground from "./components/planetsBackground/PlanetsBackground";
-import Skills from "./components/skills/Skills";
-import ProjectDisplay from "./components/projectsDisplay/ProjectsDisplay";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import HomePage from "./pages/homePage/HomePage";
+import WebService from "./pages/webService/WebService";
+import CarService from "./pages/carService/CarService";
 
 function App() {
   return (
-    <div className="App">
-      <div className="background">
-        <StarryBackground starCount={300} />
-        <PlanetsBackground />
-        <SocialBar />
-        <OpenMessage />
-        <ProjectDisplay/>
-        <Skills/>
-        <VerticalTimeline />
-        <Footer />
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/WebService" element={<WebService />} />
+        <Route path="/CarService" element={<CarService />} />
+      </Routes>
+    </Router>
   );
 }
 
