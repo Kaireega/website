@@ -8,6 +8,7 @@ function HomePage() {
 
   return (
     <div className="HomePage">
+      {/* Background Sections */}
       <div
         className={`background-section left ${
           hoveredButton === "businessOne" ? "hovered" : ""
@@ -19,23 +20,22 @@ function HomePage() {
         }`}
       ></div>
 
+      {/* Content Section */}
       <div className="content">
-        <h1>Welcome to Our Services</h1>
-        <p>Select the business you would like to explore:</p>
         <div className="button-container">
           <button
             onMouseEnter={() => setHoveredButton("businessOne")}
             onMouseLeave={() => setHoveredButton(null)}
-            onClick={() => navigate("/WebService")}
+            onClick={() => navigate("/CarService")}
           >
-            Go to Business One
+            Car Detailing Services
           </button>
           <button
             onMouseEnter={() => setHoveredButton("businessTwo")}
             onMouseLeave={() => setHoveredButton(null)}
-            onClick={() => navigate("/CarService")}
+            onClick={() => navigate("/WebService")}
           >
-            Go to Business Two
+            Website Services
           </button>
         </div>
       </div>

@@ -5,7 +5,6 @@
   overflow: hidden;
   font-family: Arial, sans-serif;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -17,72 +16,103 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 50%;
-  transition: all 0.6s ease;
+  width: 50%; /* Split the screen in half */
+  transition: width 0.6s ease, filter 0.6s ease;
   background-size: cover;
   background-position: center;
-
+  z-index: 0; /* Place background behind content */
 }
 
 .background-section.left {
   left: 0;
-  background-size: cover;
-  background-position: top center; /* Adjust position to show key parts of the image */
-  filter: grayscale(10%);
-  transition: all 0.6s ease;
   background-image: url('../../assets/car-wash-vs-detailing-1.jpg'); /* Replace with Business One image */
+  filter: grayscale(10%);
 }
 
 .background-section.right {
-  background-size: cover;
-  background-position: top center; /* Adjust position to show key parts of the image */
-  filter: grayscale(80%);
-  transition: all 0.6s ease;
   right: 0;
-  background-image: url('../../assets/'); /* Replace with Business Two image */
+  background-image: url('../../assets/2019-August-Content-Blog-Headers-Batch-1-CBD-Marketing-4858-MT-v2-_1x.webp'); /* Replace with Business Two image */
+  filter: grayscale(80%);
 }
 
-/* Expand on hover */
+/* Hover effect for expansion */
 .background-section.hovered {
-  width: 100%;
+  width: 85%; /* Expand the hovered section */
   filter: grayscale(0%);
-  z-index: 1;
+  z-index: 1; /* Bring hovered section to the front */
 }
 
 /* Content section */
 .content {
-  position: relative;
-  z-index: 2;
-}
-
-h1 {
-  margin-bottom: 20px;
-  font-size: 2.5rem;
-}
-
-p {
-  margin-bottom: 40px;
-  font-size: 1.2rem;
+  position: absolute; /* Absolute to overlay perfectly */
+  top: 50%; /* Center vertically */
+  left: 48.5%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust to center */
+  z-index: 2; /* Ensure content is above background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .button-container {
   display: flex;
   gap: 20px;
   justify-content: center;
+  align-items: center;
 }
 
 button {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #333;
-  border: none;
-  padding: 10px 20px;
-  font-size: 18px;
+  background-color: #01050a; /* Primary blue */
+  color: #c8c8c8; /* White text */
+  border: 2px solid transparent;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
   cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 50px; /* Rounded button */
+  transition: all 0.4s ease; /* Smooth transition */
+  position: relative;
+  overflow: hidden; /* For hover effects */
+  z-index: 1;
 }
 
-button:hover {
-  background-color: #333;
-  color: #fff;
+
+
+
+/* Hover effect: background color animation */
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, #ef0404, #000000, #ef0404);
+  z-index: -1;
+  transition: transform 0.4s ease;
+  transform: scaleX(0);
+  transform-origin: left;
 }
+
+button:hover::before {
+  transform: scaleX(1);
+}
+
+/* Pulse effect */
+button:hover {
+  animation: pulse 1s infinite;
+}
+
+/* Keyframes for pulse animation */
+/* @keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px #f8070725, 0 0 20px #f8070725;
+  }
+  50% {
+    box-shadow: 0 0 20px #f8070780, 0 0 40px #f8070780;
+  }
+  50% {
+    box-shadow: 0 0 20px #f80707, 0 0 40px #e70303;
+  }
+} */
