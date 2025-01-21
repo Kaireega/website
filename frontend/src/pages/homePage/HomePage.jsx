@@ -24,13 +24,13 @@ function HomePage() {
       <div className="content">
         <div className="text-container">
           <h1>Welcome to Our Business</h1>
-          <p>
-            We offer a variety of services to help you with your car detailing and
-            website needs. Click on the buttons below to learn more about our
-            services.
-          </p>
-        </div>
-        
+            <p>
+              We offer a variety of services to help you with your car detailing and
+              website needs. Click on the buttons below to learn more about our
+              services.
+            </p>
+          </div>
+
           <div className="button-container">
             <button
               onMouseEnter={() => setHoveredButton("businessOne")}
