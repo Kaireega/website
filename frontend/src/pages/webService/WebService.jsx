@@ -12,7 +12,7 @@ import ProjectDisplay from "../../components/projectsDisplay/ProjectsDisplay";
 
 function WebService() {
     return (
-      <div className="App">
+      <div className="WebService">
         <div className="background">
           <StarryBackground starCount={300} />
           <PlanetsBackground />

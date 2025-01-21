@@ -26,7 +26,7 @@
 .background-section.left {
   left: 0;
   background-image: url('../../assets/car-wash-vs-detailing-1.jpg'); /* Replace with Business One image */
-  filter: grayscale(10%);
+  filter: grayscale(80%);
 }
 
 .background-section.right {
@@ -37,7 +37,7 @@
 
 /* Hover effect for expansion */
 .background-section.hovered {
-  width: 85%; /* Expand the hovered section */
+  width: 90%; /* Expand the hovered section */
   filter: grayscale(0%);
   z-index: 1; /* Bring hovered section to the front */
 }
@@ -45,7 +45,7 @@
 /* Content section */
 .content {
   position: absolute; /* Absolute to overlay perfectly */
-  top: 50%; /* Center vertically */
+  top: 30%; /* Center vertically */
   left: 48.5%; /* Center horizontally */
   transform: translate(-50%, -50%); /* Adjust to center */
   z-index: 2; /* Ensure content is above background */
@@ -53,6 +53,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  border-radius: 20px; /* Rounded corners */
 }
 
 .button-container {
@@ -76,9 +78,6 @@ button {
   overflow: hidden; /* For hover effects */
   z-index: 1;
 }
-
-
-
 
 /* Hover effect: background color animation */
 button::before {
