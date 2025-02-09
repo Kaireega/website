@@ -45,7 +45,7 @@
 /* Content section */
 .content {
   position: absolute; /* Absolute to overlay perfectly */
-  top: 30%; /* Center vertically */
+  top: 15%; /* Center vertically */
   left: 48.5%; /* Center horizontally */
   transform: translate(-50%, -50%); /* Adjust to center */
   z-index: 2; /* Ensure content is above background */

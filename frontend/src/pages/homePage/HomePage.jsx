@@ -23,10 +23,10 @@ function HomePage() {
       {/* Content Section */}
       <div className="content">
         <div className="text-container">
-          <h1>Welcome to Our Business</h1>
+          <h1>Welcome</h1>
             <p>
-              We offer a variety of services to help you with your car detailing and
-              website needs. Click on the buttons below to learn more about our
+              I offer a variety of services to help you with your car detailing and
+              website development needs. Click on the button below to learn more about my
               services.
             </p>
           </div>
