@@ -1,153 +1,71 @@
-# Digital Billboard Events App
+# website
 
-A modern event planning and networking application with an interactive map interface featuring digital billboard-style event displays.
+Monorepo containing two web applications and a Spring Boot backend stub.
 
-## Features
+---
 
-🗺️ **Interactive Map Interface**
-- Real-time map showing event locations
-- Custom markers for different event categories
-- Drag-to-explore navigation
-- Location search functionality
+## Projects in this repo
 
-📋 **Event Management**
-- Rich event details with images and descriptions
+| App | Directory | Stack | Description |
+|-----|-----------|-------|-------------|
+| **Digital Billboard Events** | Root (`/`) | Next.js 14, Mapbox, TypeScript | Interactive event map with digital billboards and RSVP |
+| **Personal Portfolio** | `frontend/` | React, Three.js, MUI | 3D starry-background portfolio site |
+| **Backend (stub)** | `src/main/java/` | Spring Boot | Incomplete skeleton — no `build.gradle` |
+
+---
+
+## Digital Billboard Events App (root)
+
+A modern event planning app with an interactive Mapbox map, event markers, digital billboard displays, and RSVP tracking.
+
+### Setup
+
+```bash
+npm install
+cp .env.example .env.local
+# Add your Mapbox token: NEXT_PUBLIC_MAPBOX_TOKEN=pk.your_token
+npm run dev
+```
+
+Open http://localhost:3000
+
+**Prerequisites:** Node.js 18+, free [Mapbox](https://mapbox.com) account.
+
+See [`setup-instructions.md`](setup-instructions.md) for a quick-start guide.
+
+### Features
+
+- Interactive Mapbox map with event markers
+- Digital billboard displays with priority-based visibility
 - RSVP system with attendance tracking
 - Category-based organization (Social, Professional, Educational, Cultural, Sports)
-- Real-time payment and capacity tracking
+- Responsive design with Framer Motion animations
 
-📺 **Digital Billboard System**
-- Eye-catching billboard displays for featured events
-- Priority-based visibility with animations
-- Call-to-action integration
-- Automatic expiry dates
+---
 
-🎨 **Modern UI/UX**
-- Responsive design for all devices
-- Smooth animations and transitions
-- Real-time status indicators
-- Global search and filtering
+## Personal Portfolio (`frontend/`)
 
-## Getting Started
+A 3D portfolio site with animated starry background, career timeline, and social links. Deployed to GitHub Pages.
 
-### Prerequisites
-- Node.js 18+ 
-- A free [Mapbox](https://mapbox.com) account
+### Setup
 
-### Installation
-
-1. **Clone and install:**
-   ```bash
-   npm install
-   ```
-
-2. **Environment setup:**
-   ```bash
-   cp .env.example .env.local
-   ```
-   
-   Get your Mapbox token at [mapbox.com](https://mapbox.com) and add it:
-   ```
-   NEXT_PUBLIC_MAPBOX_TOKEN=pk.your_actual_token_here
-   ```
-
-3. **Run the application:**
-   ```bash
-   npm run dev
-   ```
-
-4. **Open your browser:**
-   Navigate to `http://localhost:3000`
-
-## Data Structure
-
-The app uses mock data with realistic event examples:
-- **Events:** Professional mixers, art gallery openings, community workshops
-- **Billboards:** Featured events with priority-based visibility
-- **Categories:** Social, Professional, Educational, Cultural, Sports
-
-## Development
-
-### Project Structure
-```
-├── app/
-│   ├── layout.tsx          # App layout and providers
-│   └── page.tsx           # Main application page
-├── components/
-│   ├── MapInterface.tsx   # Core map with event markers
-│   ├── EventPopup.tsx     # Event details popup
-│   ├── BillboardPopup.tsx # Billboard display popup
-│   └── LocationSearch.tsx # Location search component
-├── types/
-│   └── index.ts           # TypeScript interfaces
-├── data/
-│   └── mockData.ts        # Sample events and billboards
-└── ...
+```bash
+cd frontend
+npm install
+npm start          # http://localhost:3001 (use PORT=3001 to avoid conflict)
+npm run deploy     # Deploy to GitHub Pages
 ```
 
-### Technologies Used
-- **Next.js 14** - React framework
-- **TypeScript** - Type safety
-- **Mapbox GL JS** - Interactive maps
-- **Tailwind CSS** - Styling
-- **Framer Motion** - Animations
-- **Lucide React** - Icons
+> **Port note:** Both apps default to port 3000. Run the portfolio on a different port: `PORT=3001 npm start`.
 
-### Key Features Implementation
-- **Event markers** with category-based colors
-- **Billboard detection** with enhanced visual prominence
-- **Real-time RSVP** system
-- **Search functionality** with location detection
-- **Responsive popups** with smooth animations
+---
 
-## Usage
+## Spring Boot backend (stub)
 
-1. **Explore the Map**: Use the navigation to zoom and pan around the city
-2. **Search Locations**: Use the search bar to jump to specific areas
-3. **Click Event Markers**: View detailed event information
-4. **RSVP to Events**: Register for events you want to attend
-5. **Check Billboards**: Look for priority announcements and featured events
+An incomplete Spring Boot skeleton exists at `src/main/java/com/Jiraiya_sen/solution/` but lacks a `build.gradle` file and is not runnable. It can be removed or completed in a future iteration.
 
-## Customization
+---
 
-### Adding New Events
-Edit `data/mockData.ts` to add new event entries:
+## Author
 
-```typescript
-const newEvent: Event = {
-  id: 'unique-id',
-  title: 'Event Title',
-  description: 'Detailed description...',
-  startDate: '2024-12-01T18:00:00Z',
-  endDate: '2024-12-01T22:00:00Z',
-  location: {
-    latitude: 40.7128,
-    longitude: -74.0060,
-    address: '123 Main St, New York, NY'
-  },
-  category: 'professional', // or 'social', 'educational', 'cultural', 'sports'
-  capacity: 100,
-  price: 0, // 0 for free events
-  // ... other properties
-};
-```
-
-### Styling Events
-Category colors are defined in the marker styling:
-- Professional: Green 🌿
-- Cultural: Orange 🧡
-- Educational: Purple 💜
-- Social: Blue 💙
-- Sports: Red ❤️
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## License
-
-MIT License - feel free to use for your own event platforms!
+**Kai'ree Gay** — [GitHub](https://github.com/Kaireega)
